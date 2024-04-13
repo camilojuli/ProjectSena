@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Vistas con CSS/EliminarUsuario.css">
     <title>Eliminar Usuario</title>
 </head>
+
 <body>
-    <div>
-        <h1>Eliminar Usuario</h1>
-        <h5>Por favor, elimina tus datos para actualizar la cuenta</h5>
-        <div>
-            <input type="search" placeholder="Buscar por codigo">
-            <button>
-                Buscar
+    <div class="ContenedorPrincipal">
+        <div class="Contenedor2">
+            <h1>Eliminar Usuario</h1>
+            <h5 class="h51">Por favor, elimina tus datos para actualizar la cuenta</h5>
+            <div>
+                <input class="input0" type="search" placeholder="Buscar por codigo">
+                <button class="botonBuscar">
+                    Buscar
+                </button>
+            </div>
+            <div class="Contenedor3">
+                <div class="Contenedor3_1">
+                    <h2 id="h2i" class="h21">Nombre</h2>
+                    <input type="text" class="input1">
+                    <h2 class="h21" >Usuario</h2>
+                    <input type="text" class="input1">
+                    <h2 class="h21" >Cargo</h2>
+                    <input type="text" class="input1">
+                </div>
+                <div class="Contenedor3_1">
+                    <h2 id="h2i" class="h21" >Apellido</h2>
+                    <input type="text" class="input1">
+                    <h2 class="h21" >Codigo</h2>
+                    <input type="text" class="input1">
+                    <h2 class="h21">Rol</h2>
+                    <select class="select1" name="opciones">
+                        <option value="opcion1">Opción 1</option>
+                        <option value="opcion2">Opción 2</option>
+                        <option value="opcion3">Opción 3</option>
+                        <option value="opcion4">Opción 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="Contenedor4">
+                <h2  id = "h28" class="h27">Correo electronico</h2>
+                <input type="text" class="input2">
+                <h2 id="h28" >Contraseña</h2>
+                <input type="password" class="input2">
+                <h2 id = "h28" >Confirmar contraseña</h2>
+                <input type="password" class="input2">
+            </div>
+            <button class="botonEliminar">
+                Eliminar
             </button>
         </div>
-        <div>
-            <h2>Nombre</h2>
-            <input type="text">
-            <h2>Apellido</h2>
-            <input type="text">
-        </div>
-        <div>
-            <h2>Codigo</h2>
-            <input type="text">
-            <h2>Usuario</h2>
-            <input type="text">
-        </div>
-        <div>
-            <h2>Cargo</h2>
-            <input type="text">
-            <h2>Rol</h2>
-            <input type="text">
-        </div>
-        <div>
-            <h2>Correo electronico</h2>
-            <input type="text">
-            <h2>Contraseña</h2>
-            <input type="password">
-        </div>
-        <button>
-            Eliminar
-        </button>
     </div>
 </body>
+
 </html>
