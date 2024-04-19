@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Vistas con CSS/EliminarEntrada.css">
     <title>Eliminar entrada</title>
 </head>
+
 <body>
-    <div>
-        <h1>Eliminar Entrada</h1>
-        <div>
-            <input type="text" placeholder="Buscar por codigo">
-            <button>Buscar</button>
-        </div>
+    <div class="ContenedorPrincipal">
+        <div class="Contenedor2">
+            <h1>Eliminar Entrada</h1>
+            <div class="Contenedor3">
+                <input type="text" placeholder="Buscar por codigo" class="inputbuscar">
+                <button class="botonbuscar">Buscar</button>
+            </div>
             <table>
                 <tr>
                     <th>Codigo</th>
@@ -25,37 +29,57 @@
                     <th>Fecha de salida</th>
                 </tr>
             </table>
-        <div>
-            <h2>Codigo</h2>
-            <input type="text">
-            <h2>Oficina</h2>
-            <input type="text">
+            <div class="Contenedor4">
+                <div class="Contenedor4_1">
+                    <div class="Contenedor4_1_1">
+                        <h2>Codigo</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Dependencia</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Programa</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Cantidad</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>F.Ingreso</h2>
+                        <input type="text">
+                    </div>
+                </div>
+
+                <div class="Contenedor4_1">
+                    <div class="Contenedor4_1_1">
+                        <h2>Oficina</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Nombre del insumo</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Unidad de medida</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>Valor</h2>
+                        <input type="text">
+                    </div>
+                    <div class="Contenedor4_1_1">
+                        <h2>F.Vencimiento</h2>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+            <button>Eliminar entrada</button>
         </div>
-        <div>
-            <h2>Dependencia</h2>
-            <input type="text">
-            <h2>Nombre del insumo</h2>
-            <input type="text">
-        </div> <div>
-            <h2>Programa</h2>
-            <input type="text">
-            <h2>Unidad de medida</h2>
-            <input type="text">
-        </div> <div>
-            <h2>Cantidad</h2>
-            <input type="text">
-            <h2>Valor</h2>
-            <input type="text">
-        </div>
-        </div> <div>
-        <h2>Fecha de ingreso</h2>
-        <input type="text">
-        <h2>Fecha de vencimiento</h2>
-        <input type="text">
     </div>
-        <button>
-            Eliminar entrada
-        </button>
-    </div>
+
 </body>
+
 </html>
