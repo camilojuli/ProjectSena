@@ -1,0 +1,61 @@
+.ContendorPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 10%;
+
+    .ContendorSecundario {
+        border: 2px solid black;
+        border-radius: 35px;
+        width: 250px;
+        height: 460px;
+        text-align: center;
+        background-color: #fffae3;
+
+        .h2Principal {
+            margin-top: 40px;
+            margin-right: 100px;
+            margin-bottom: 5px;
+        }
+
+        .h2Secundario {
+            margin-top: 40px;
+            margin-right: 60px;
+            margin-bottom: 5px;
+        }
+        .input1{
+            border-radius: 10px;
+            height: 20px;
+        }
+
+        .ContenedorTerciario {
+            margin-top: -20px;
+            padding: 2px;
+            display: flex;
+            justify-content: center;
+            margin-right: 50px;
+        }
+
+        .BotonIngresar {
+            margin-top: -20px;
+            background-color: #47667b;
+            width: 180px;
+            height: 30px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+
+        }
+
+        .PrimeraAncla {
+
+        }
+
+        .PrimeraImagen {
+            float: left;
+            margin-top: 25px;
+            max-width: 150px;
+            height: 50px;
+        }
+    }
+}

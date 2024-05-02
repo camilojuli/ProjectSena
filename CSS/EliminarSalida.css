@@ -1,0 +1,49 @@
+.ContenedorPrincipal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 10%;
+
+    .Contenedor2 {
+        /* border: 2px solid black;
+        border-radius: 35px; */
+        width: 800px;
+        height: 500px;
+        text-align: center;
+        background-color: #fffae3;
+
+        .Contenedor3 {
+            .input1 {
+                margin-top: 20px;
+                width: 680px;
+                height: 30px;
+                border-radius: 10px;
+            }
+            .button1{
+                width: 100px;
+                height: 35px;
+                border-radius: 10px;
+            }
+        }
+        .tabla1{
+            margin-top: 10px;
+            border: 1px solid;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: aliceblue;
+            border-collapse: collapse;
+            margin: 5px;
+            
+
+            .th{
+                border: 1px solid black;
+                margin: 10px;
+                width: 150px;
+                height: 5px;
+            }
+
+        }
+    }
+
+}
