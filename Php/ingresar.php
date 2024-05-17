@@ -20,7 +20,7 @@ if (!empty($_POST['ingresar'])) {
         $resultado = $stmt->get_result();
 
         if ($resultado->num_rows > 0) {
-            header("Location: PaginaPrincipal.php");
+            header("Location: ../Plantilla/index.html");
         }
         echo $user, $password;
     }
