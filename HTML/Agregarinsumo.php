@@ -7,11 +7,8 @@
     <title>Agregar insumo</title>
 
     <!-- Forma de poner bootstrap en nuestro proyecto pero con la ayuda en el servidor -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -25,13 +22,12 @@
                     <div class="row">
                         <div class="col-4">
                             <label for="dependencia">Dependencia:</label>
-                            <select class="form-select mb-3" name="provincia" id="provincia">
-                                <option selected>Elije...</option>
-                                <option value="Rio de Oro">Rio de Oro</option>
-                                <option value="Aguachica">Aguachica</option>
-                                <option value="Valledupar">Valledupar</option>
-                                <option value="Bogota">Bogota</option>
-                                <option value="Ocaña">Ocaña</option>
+                            <select class="form-select mb-3" name="dependencia" id="dependencia">
+                                <option selected>Elije una opcion...</option>
+                                <?php
+                                include("../Php/nueva.php")
+                               
+                                ?>
                             </select>
                         </div>
                         <div class="col-4">
@@ -47,14 +43,13 @@
                             </select>
                         </div>
                         <div class="col-4">
-                            <label for="Programa">Programa</label>
-                            <select class="form-select mb-3" name="provincia" id="provincia">
-                                <option selected>Elije...</option>
-                                <option value="Rio de Oro">Rio de Oro</option>
-                                <option value="Aguachica">Aguachica</option>
-                                <option value="Valledupar">Valledupar</option>
-                                <option value="Bogota">Bogota</option>
-                                <option value="Ocaña">Ocaña</option>
+                            <label for="programa">Programa</label>
+                            <select class="form-select mb-3" name="programa" id="programa">
+                                <option selected>Elije una opcion...</option>
+                                <?php
+                                include("../Php/programa.php")
+                                ?>
+                            
                             </select>
                         </div>
                     </div>

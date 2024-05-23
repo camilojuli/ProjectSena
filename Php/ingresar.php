@@ -22,6 +22,6 @@ if (!empty($_POST['ingresar'])) {
         if ($resultado->num_rows > 0) {
             header("Location: ../Plantilla/index.html");
         }
-        echo $user, $password;
     }
 }
+?>
