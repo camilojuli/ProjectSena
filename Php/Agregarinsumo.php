@@ -25,7 +25,7 @@
                             <select class="form-select mb-3" name="dependencia" id="dependencia">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("../Php/nueva.php")
+                                include("class/dependencias.php")
                                
                                 ?>
                             </select>
@@ -33,13 +33,11 @@
                         <div class="col-4">
                             <label for="Oficina:">Oficina:</label>
                             <select class="form-select mb-3" name="provincia" id="provincia">
-
-                                <option selected>Elije...</option>
-                                <option value="Rio de Oro">Rio de Oro</option>
-                                <option value="Aguachica">Aguachica</option>
-                                <option value="Valledupar">Valledupar</option>
-                                <option value="Bogota">Bogota</option>
-                                <option value="Ocaña">Ocaña</option>
+                                <option selected>Elije una opcion...</option>
+                                <?php
+                                include("class/proceso.php")
+                                ?>
+                                
                             </select>
                         </div>
                         <div class="col-4">
@@ -47,7 +45,7 @@
                             <select class="form-select mb-3" name="programa" id="programa">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("../Php/programa.php")
+                                include("class/programa.php")
                                 ?>
                             
                             </select>
