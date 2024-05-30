@@ -12,21 +12,23 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="card o-hidden border-0 shadow-lg my-5">
-            <div class="card-body p-0 m-3">
-                <div class="row">
-                    <h2 class="text-center text-blacks">Ingreso de nuevos insumos y/o Productos</h2>
-                </div>
-                <form>
+    <form action="class/guardarInsumo.php" method="post">
+        <div class="container">
+            <div class="card o-hidden border-0 shadow-lg my-5">
+                <div class="card-body p-0 m-3">
+                    <div class="row">
+                        <h2 class="text-center text-blacks">Ingreso de nuevos insumos y/o Productos</h2>
+                    </div>
                     <div class="row">
                         <div class="col-4">
                             <label for="dependencia">Dependencia:</label>
                             <select class="form-select mb-3" name="dependencia" id="dependencia">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/dependencias.php")
-                               
+                                include("class/Conexion.php");
+                                include("class/dependencias.php");
+                                $dependecias = new Dependencia($conexion);
+                                $dependecias->mostrarDependencias();
                                 ?>
                             </select>
                         </div>
@@ -35,9 +37,12 @@
                             <select class="form-select mb-3" name="provincia" id="provincia">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/proceso.php")
+                                include("class/Conexion.php");
+                                include("class/procesos.php");
+                                $procesos = new Proceso($conexion);
+                                $procesos->mostrarProcesos();
                                 ?>
-                                
+
                             </select>
                         </div>
                         <div class="col-4">
@@ -45,63 +50,66 @@
                             <select class="form-select mb-3" name="programa" id="programa">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/programa.php")
+                                include("class/Conexion.php");
+                                include("class/programas.php");
+                                $programas = new Programa($conexion);
+                                $programas->mostrarProgramas();
                                 ?>
-                            
+
                             </select>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6">
                             <label for="nombreinsumo">Nombre del insumo:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="ninsumo">
                         </div>
                         <div class="col-6">
                             <label for="unidadmedida">Unidad de medida:</label>
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="umedida">
                         </div>
                     </div>
-                </form>
-                <div class="row mt-1">
-                    <div class="col-12">
-                        <hr>
+                    <div class="row mt-1">
+                        <div class="col-12">
+                            <hr>
+                        </div>
                     </div>
-                </div>
-                <div class="row  mt-2 ">
-                    <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-primary " name="guardar">Guardar</button>
-                    </div>
-                    <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-primary" name="modificar">Modificar</button>
-                    </div>
-                    <div class="col-4 text-center">
-                        <button type="submit" class="btn btn-primary" name="eliminar">Eliminar</button>
-                    </div>
+                    <div class="row  mt-2 ">
+                        <div class="col-4 text-center">
+                            <button type="submit" class="btn btn-primary " name="guardar">Guardar</button>
+                        </div>
+                        <div class="col-4 text-center">
+                            <button type="submit" class="btn btn-primary" name="modificar">Modificar</button>
+                        </div>
+                        <div class="col-4 text-center">
+                            <button type="submit" class="btn btn-primary" name="eliminar">Eliminar</button>
+                        </div>
 
-                </div>
-                <div class="row mt-1">
-                    <div class="col-12">
-                        <hr>
                     </div>
-                </div>
-                <div class="table-responsive-lg">
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th>Codigo</th>
-                                <th>Dependencia</th>
-                                <th>Oficina</th>
-                                <th>Programa</th>
-                                <th>Nombre insumo</th>
-                                <th>Unidad de medida</th>
-                            </tr>
-                        </thead>
-                    </table>
+                    <form method="POST" autocomplete="off">
+                        <div class="row mt-1">
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="table-responsive-lg">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Codigo</th>
+                                        <th>Dependencia</th>
+                                        <th>Oficina</th>
+                                        <th>Programa</th>
+                                        <th>Nombre insumo</th>
+                                        <th>Unidad de medida</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
                 </div>
             </div>
         </div>
-    </div>
-
+    </form>
 </body>
 
 </html>
