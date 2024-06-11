@@ -25,10 +25,9 @@
                             <select class="form-select mb-3" name="dependencia" id="dependencia">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/Conexion.php");
-                                include("class/dependencias.php");
-                                $dependecias = new Dependencia($conexion);
-                                $dependecias->mostrarDependencias();
+                                include("class/Dependencias.php");
+                                $dependencias = new Dependencia($conexion);
+                                $dependencias->mostrarDependencias();
                                 ?>
                             </select>
                         </div>
@@ -37,7 +36,6 @@
                             <select class="form-select mb-3" name="provincia" id="provincia">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/Conexion.php");
                                 include("class/procesos.php");
                                 $procesos = new Proceso($conexion);
                                 $procesos->mostrarProcesos();
@@ -50,7 +48,6 @@
                             <select class="form-select mb-3" name="programa" id="programa">
                                 <option selected>Elije una opcion...</option>
                                 <?php
-                                include("class/Conexion.php");
                                 include("class/programas.php");
                                 $programas = new Programa($conexion);
                                 $programas->mostrarProgramas();
@@ -103,6 +100,11 @@
                                         <th>Nombre insumo</th>
                                         <th>Unidad de medida</th>
                                     </tr>
+                                    <?php
+                                    include("class/tablita.php");
+                                    $tabla = new Tablita($conexion);
+                                    $tabla->mostrarTabla();
+                                    ?>
                                 </thead>
                             </table>
                         </div>

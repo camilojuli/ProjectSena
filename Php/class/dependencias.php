@@ -31,8 +31,10 @@ class Dependencia
 
         foreach ($dependencias as $dep) {
             echo "<option value='" . $dep['id_dependencia'] . "'>" . $dep['nombre_oficina'] . "</option>";
-            echo $dep['nombre_oficina'];
+            $d = $dep['nombre_oficina'];
+            echo $d;
         }
+        //return $d;
     }
 }
 ?>
